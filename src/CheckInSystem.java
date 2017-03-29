@@ -33,7 +33,7 @@ public class CheckInSystem {
     * size. However it check whether or not a destinations stack is bigger or as big as
     * another destinations stack. And it starts from Stockholm. That means that if Stockholm
     * and another Stack has the same size, Stockholm will be returned since it checks for that
-    * first. This is just a coihce so that we have one stack being returned out of them.
+    * first. This solution is just a choice so that we have one stack being returned out of them.
      * The way I intend to use this is so the most important stack has its orders
      * put into a plane. Therefore it should be empty for the next time and then
      * take the next destination instead. */

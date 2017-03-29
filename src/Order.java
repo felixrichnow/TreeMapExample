@@ -1,5 +1,6 @@
+
 /**
- * Created by user on 2017-03-27.
+ * Created by Felix Richnau on 2017-03-27.
  */
 public class Order {
     private int passengers; // 1-5 passengers per order
