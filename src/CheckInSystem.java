@@ -14,8 +14,6 @@ public class CheckInSystem {
     Stack<Airplane> BerlinAirPlaneStack;
     Stack<Airplane> RomeAirPlaneStack;
 
-//Fix this
-
     public void sortTheOrdersInTheSystem(){
         while(!OrderStack.empty()){
            Order toBeSorted = OrderStack.pop();
@@ -38,7 +36,6 @@ public class CheckInSystem {
         String keyString = testDeparture+testDestination+testTicketClass;
 
         System.out.println(" ADDING ");
-
         if(testMap.get(keyString)==null){
             System.out.println(" NO-STACK FOUND AT THIS PLACE  ");
             orderStack = new Stack();
