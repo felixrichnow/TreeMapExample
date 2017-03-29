@@ -14,6 +14,7 @@ public class OrderGenerator {
         Order currentOrder = this.createANewOrder();
     }
 
+    // TEst
     Order createANewOrder(){
         Random randomGenerator = new Random();
         int randomPassenger = randomGenerator.nextInt(5) + 1;
