@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Created by user on 2017-03-27.
+ * Created by Felix Richnau on 2017-03-27.
  */
 public class OrderGenerator {
     String One = "Stockholm";
@@ -14,6 +14,7 @@ public class OrderGenerator {
         Order currentOrder = this.createANewOrder();
     }
 
+    // TEst
     Order createANewOrder(){
         Random randomGenerator = new Random();
         int randomPassenger = randomGenerator.nextInt(5) + 1;
