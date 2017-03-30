@@ -165,11 +165,13 @@
   <component name="SvnApplicationSettings">
     <option name="myCheckoutURLs">
       <list>
+        <option value="https://github.com/felixrichnow/StaffManagementProject.git" />
         <option value="https://github.com/felixrichnow/FlightSimulatorExample" />
       </list>
     </option>
     <option name="myTypedURLs">
       <list>
+        <option value="https://github.com/felixrichnow/StaffManagementProject.git" />
         <option value="https://github.com/felixrichnow/FlightSimulatorExample" />
       </list>
     </option>
