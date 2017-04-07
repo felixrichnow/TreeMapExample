@@ -6,6 +6,13 @@
           <option name="url" value="https://github.com/felixrichnow/FlightSimulator.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+<<<<<<< HEAD
+=======
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/felixrichnow/TreeMapExample.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+>>>>>>> origin/master
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\user\IdeaProjects" />
