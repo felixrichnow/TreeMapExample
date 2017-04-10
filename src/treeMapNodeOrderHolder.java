@@ -6,16 +6,14 @@ import java.util.ArrayList;
 
 public class treeMapNodeOrderHolder implements Comparable<treeMapNodeOrderHolder> {
 
-    String departure;
-    String destination;
+    String keyString;
     int numberOfPassengers;
-    ArrayList<Order> orderHolderArrayList;
+  //  ArrayList<Order> orderHolderArrayList;
 
-    public treeMapNodeOrderHolder(String departure, String destination, int numberOfPassengers) {
-        this.departure = departure;
-        this.destination = destination;
+    public treeMapNodeOrderHolder(String keyString, int numberOfPassengers) {
+        this.keyString = keyString;
         this.numberOfPassengers = numberOfPassengers;
-        orderHolderArrayList = new ArrayList<Order>();
+  //      orderHolderArrayList = new ArrayList<Order>();
     }
 
     @Override
@@ -24,25 +22,22 @@ public class treeMapNodeOrderHolder implements Comparable<treeMapNodeOrderHolder
         //return this.familyName.compareTo(that.familyName);
         //return this.name.compareTo(that.name);
         //return this.name.compareTo(that.name)+this.familyName.compareTo(that.familyName);
-        return (1000* (that.numberOfPassengers-this.numberOfPassengers))+this.departure.compareTo(that.departure);
+          // return (1000* (that.numberOfPassengers-this.numberOfPassengers))+this.keyString.compareTo(that.keyString);
+            return this.keyString.compareTo(that.keyString);
 
     }
 
-    public ArrayList<Order> getOrderArrayList(){
-        return orderHolderArrayList;
-    }
+ //   public ArrayList<Order> getOrderArrayList(){
+//        return orderHolderArrayList;
+ //   }
 
     public void addOrderToOrderArrayList(Order ordertoAdd){
         numberOfPassengers+= ordertoAdd.getPassengers();
-        orderHolderArrayList.add(ordertoAdd);
+  //      orderHolderArrayList.add(ordertoAdd);
     }
 
-    public String getDeparture(){
-        return departure;
-    }
-
-    public String getDestination(){
-        return destination;
+    public String getKeyString(){
+        return keyString;
     }
 
     public int getNumberOfPassengers(){
@@ -55,7 +50,9 @@ public class treeMapNodeOrderHolder implements Comparable<treeMapNodeOrderHolder
 
     @Override
     public String toString() {
-        return(departure+ destination);
+        return keyString;
     }
+
+
 
 }
