@@ -1,7 +1,4 @@
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Mainclass {
 
@@ -11,13 +8,13 @@ public class Mainclass {
         CustomComparator specialComp = new CustomComparator();
         // create map
         //		SortedMap<String,String>  map = new TreeMap<String, Order>(specialComp);
-        TreeMap<treeMapNodeOrderHolder, String> myMap = new TreeMap<>();
+        TreeMap<treeMapNodeOrderHolder, ArrayList<Order>> myMap = new TreeMap<>();
 
-        myMap.put(new treeMapNodeOrderHolder("RomeStk", 5), "One");
-        myMap.put(new treeMapNodeOrderHolder("B", 7), "Two");
-        myMap.put(new treeMapNodeOrderHolder("C", 4), "Three");
-        myMap.put(new treeMapNodeOrderHolder("A", 8), "A2");
-        myMap.put(new treeMapNodeOrderHolder("B", 0), "B2");
+        myMap.put(new treeMapNodeOrderHolder("RomeStk", 5), new ArrayList<Order>());
+        myMap.put(new treeMapNodeOrderHolder("B", 7),  new ArrayList<Order>());
+        myMap.put(new treeMapNodeOrderHolder("C", 4),  new ArrayList<Order>());
+        myMap.put(new treeMapNodeOrderHolder("A", 8), new ArrayList<Order>());
+        myMap.put(new treeMapNodeOrderHolder("B", 0),  new ArrayList<Order>());
 
 
 
