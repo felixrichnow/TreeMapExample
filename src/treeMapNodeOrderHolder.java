@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 /**
  * Created by user on 2017-04-07.
  */
@@ -8,12 +9,12 @@ public class treeMapNodeOrderHolder implements Comparable<treeMapNodeOrderHolder
 
     String keyString;
     int numberOfPassengers;
-  //  ArrayList<Order> orderHolderArrayList;
+   ArrayList<Order> orderHolderArrayList;
 
-    public treeMapNodeOrderHolder(String keyString, int numberOfPassengers) {
-        this.keyString = keyString;
-        this.numberOfPassengers = numberOfPassengers;
-  //      orderHolderArrayList = new ArrayList<Order>();
+    public treeMapNodeOrderHolder(Order newOrder) {
+        this.keyString = newOrder.getDeparture()+newOrder.getDestination();
+        this.numberOfPassengers = newOrder.getPassengers();
+      orderHolderArrayList = new ArrayList<Order>();
     }
 
     @Override
@@ -27,14 +28,15 @@ public class treeMapNodeOrderHolder implements Comparable<treeMapNodeOrderHolder
 
     }
 
- //   public ArrayList<Order> getOrderArrayList(){
-//        return orderHolderArrayList;
- //   }
+  public ArrayList<Order> getOrderArrayList(){
+      return orderHolderArrayList;
+  }
 
     public void addOrderToOrderArrayList(Order ordertoAdd){
         numberOfPassengers+= ordertoAdd.getPassengers();
-  //      orderHolderArrayList.add(ordertoAdd);
+        orderHolderArrayList.add(ordertoAdd);
     }
+
 
     public String getKeyString(){
         return keyString;

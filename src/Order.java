@@ -31,4 +31,8 @@ public class Order {
         return destination;
     }
 
+    public String getKeyString(){
+        return departure+destination;
+    }
+
 }
