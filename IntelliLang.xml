@@ -1,0 +1,8 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="CSS" injector-id="xml">
+      <display-name>outputStylesheet/@library</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("library")).withParent(xmlTag().withLocalName(string().equalTo("outputStylesheet")).withNamespace(string().equalTo("http://xmlns.jcp.org/jsf/html")))]]></place>
+    </injection>
+  </component>
+</application>
