@@ -10,6 +10,10 @@
           <option name="url" value="https://github.com/felixrichnow/TreeMapExample.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/amir650/BlackWidow-Chess.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\user\IdeaProjects" />
